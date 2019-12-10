@@ -1,12 +1,100 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
-<head>
-    <title></title>
-</head>
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><link rel="icon" type="png" href="favicon.png" sizes="64x64">
+<link rel="stylesheet" type="text/css" href="./estilos/estilos.css" media="screen" /> 
+<script type="text/javascript" src="./js/codigo.js"></script>
+    
+  <head>
 
-</body>
+    <title>Ahorcado</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  </head>
+
+  <body>
+
+<div id="container">
+
+  <div id="header">
+
+    <h1 id="tit1">Ahorcado Game</h1>
+
+  </div>
+
+  <div id="sidebar">
+
+    <img id="img-hang" src="./Imagenes/1.jpg" alt="Imagen del ahorcado" width="500" height="400">
+</div>
+
+  <div id="main">
+
+    <h3 id="lives"></h3>
+      
+    <div class="botones">
+      <input type="button" value="A" id="buttonA" class="button" onclick="botones('a')">
+      <input type="button" value="B" id="buttonB" class="button" onclick="botones('b')">
+      <input type="button" value="C" id="buttonC" class="button" onclick="botones('c')">
+      <input type="button" value="D" id="buttonD" class="button" onclick="botones('d')">
+      <input type="button" value="E" id="buttonE" class="button" onclick="botones('e')">
+      <input type="button" value="F" id="buttonF" class="button" onclick="botones('f')">
+      <input type="button" value="G" id="buttonG" class="button" onclick="botones('g')">
+      <input type="button" value="H" id="buttonH" class="button" onclick="botones('h')">
+      <input type="button" value="I" id="buttonI" class="button" onclick="botones('i')">
+      <input type="button" value="J" id="buttonJ" class="button" onclick="botones('j')">
+      <input type="button" value="K" id="buttonK" class="button" onclick="botones('k')">
+      <input type="button" value="M" id="buttonM" class="button" onclick="botones('m')">
+      <input type="button" value="N" id="buttonN" class="button" onclick="botones('n')">
+      <input type="button" value="L" id="buttonL" class="button" onclick="botones('l')">
+      <input type="button" value="Ñ" id="buttonÑ" class="button" onclick="botones('ñ')">
+      <input type="button" value="O" id="buttonO" class="button" onclick="botones('o')">
+      <input type="button" value="P" id="buttonP" class="button" onclick="botones('p')">
+      <input type="button" value="Q" id="buttonQ" class="button" onclick="botones('q')">
+      <input type="button" value="R" id="buttonR" class="button" onclick="botones('r')">
+      <input type="button" value="S" id="buttonS" class="button" onclick="botones('s')">
+      <input type="button" value="T" id="buttonT" class="button" onclick="botones('t')">
+      <input type="button" value="U" id="buttonU" class="button" onclick="botones('u')">
+      <input type="button" value="V" id="buttonV" class="button" onclick="botones('v')">
+      <input type="button" value="W" id="buttonW" class="button" onclick="botones('w')">
+      <input type="button" value="X" id="buttonX" class="button" onclick="botones('x')">
+      <input type="button" value="Y" id="buttonY" class="button" onclick="botones('y')">
+      <input type="button" value="Z" id="buttonZ" class="button" onclick="botones('z')">
+    </div>
+      
+    <div class="botones-S">
+      <input type="button" value="Start" id="buttonStart" class="buttonStart" onclick="iniciarJuego();resetColor()">
+      <input type="button" value="?" id="buttonTip" class="buttonTip" onclick="pista()">
+    </div>
+
+</div>
+
+<div class="p-palabra">
+
+    <p id="palabra"></p>
+
+  </div>  
+
+  <div id="footer">
+      
+      <div id="pie">
+      <p>2ºSMX</p>
+      </div>
+      
+      <div id="pie">
+        <p>Christian Yepes Gomez</p>  
+      </div>
+      
+      <div id="pie">
+          <p>JS</p>
+      </div>
+      
+  </div >
+
+  
+
+</div >
+  </body>
 
 </html>
